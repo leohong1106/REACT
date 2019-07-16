@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!-- 최신 자바스크립트 문법을 옛날꺼로 바꿔줘서 잘 동작하게끔 하는 라이브러리 -->
+
+    <style>
+    div h1{
+        font-size: 50px;
+        padding: 10px;
+        margin: 10px;
+        background-color: tomato;
+    }
+    </style>
+
+</head>
+
+<body>
+    <h1>리액트 테스트</h1>
+    <div id="target"></div>
+    <script type="text/babel">
+        var target = document.querySelector('#target');
+        class FirstCompnent extends React.Component{
+            render() {
+                return <h1>{this.props.hero}</h1>
+            }
+        }
+        ReactDOM.render(
+            <div>
+                <h1>Batman</h1>
+                <h1>Ironman</h1>
+                <h1>Superman</h1>
+                <FirstCompnent hero="Spiderman"/>
+                <FirstCompnent hero="Wonerwoman"/>
+            </div>,
+                target
+        )
+    </script>
+</body>
+
+</html>
