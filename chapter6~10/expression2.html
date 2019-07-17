@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/babel">
+    // 당연히 주석 달 수 있음
+    class Label extends React.Component{
+        // ㄴ컴포넌트는 꼭 대문자로 써야 함
+        render() {
+            var test ='테스트'
+            return(
+       [
+        <React.Fragment>    
+           <h1>아이템1</h1>
+           <h1>아이템2</h1>
+           {/* 이렇게 주석 달 수 있다.*/}
+        </React.Fragment>
+       ]
+                )
+         }
+    }
+    ReactDOM.render(
+
+    <Label />
+    // ㄴ컴포넌트는 꼭 대문자로 써야 함
+       , document.body
+       )
+    </script>
+</body>
+
+</html>

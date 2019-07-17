@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/babel">
+    class Counter extends React.Component {
+        render() {
+            var counterStyle = {
+                fontSize: "72px",
+                fontFamily: "sans-serif",
+                color: "tomato",
+                fontWeight: "bold"
+            }
+            return (
+                <div style={counterStyle}>
+                {this.props.countvalue}
+                </div>
+            )
+        }
+    }
+
+    class CounterDisplay extends React.Component {
+        constructor (props) {
+            super (props);
+            this.state = {
+                countvalue : 1
+            }
+        }
+    
+        handleClick = (evt) => {
+            this.setState({
+                countvalue : this.state.countvalue * 2
+            })
+        }
+
+
+        render() {
+            var backgroundStyle= {
+                padding: 50,
+                backgroundColor: "yellow",
+                width: "250px",
+                height: "100px",
+                borderRadius: "10px",
+                textAlign: "center"
+            }
+
+            return (
+                <div style={backgroundStyle}>
+                <Counter countvalue={this.state.countvalue}/>
+                <button onClick={this.handleClick}>+</button>
+                </div>
+            )
+        }
+    }
+
+
+       ReactDOM.render(
+        <div>
+            <CounterDisplay />
+        </div>,
+        document.body
+      )
+    </script>
+</body>
+
+</html>

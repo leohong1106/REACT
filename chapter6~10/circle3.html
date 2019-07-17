@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/babel">
+    class Circle extends React.Component {
+        render() {
+            var circleStyle = {
+                padding: "10px",
+                margin: "20px",
+                display: "inline-block",
+                backgroundColor: this.props.bgColor,
+                borderRadius: "50%",
+                width: "100px",
+                height: "100px"
+            }
+            return (
+                <div style={circleStyle}></div>
+            )
+        }
+    }
+    // var showColor = <Circle bgColor="tomato" />;
+    var renderData = [
+        // <Circle bgColor={'blue'} />,
+        // <Circle bgColor={'red'} />,
+        // <Circle bgColor={'pink'} />
+    ];
+
+    function showColor() {
+        var colors = ['#393E41', '#E94F37', '#1C89BF', '#A1D363'];
+        var ran = Math.floor(Math.random() * colors.length);
+        renderData.push(<Circle bgColor={colors[ran]} />);
+    }
+
+    showColor();
+    showColor();
+    showColor();
+    showColor();
+
+
+    
+    // function showColor() {
+    //     return <Circle bgColor="tomato" />;
+    // }
+
+    ReactDOM.render(
+        <div>
+            {renderData[0]}
+            {renderData}
+            
+            
+        </div>,
+        document.body
+      )    
+    </script>
+</body>
+
+</html>
