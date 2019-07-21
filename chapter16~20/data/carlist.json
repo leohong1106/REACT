@@ -1,0 +1,81 @@
+[{
+    "carNumber": "11주1111",
+    "owner": "홍길동",
+    "model": "SONATA",
+    "company": "HYUNDAI",
+    "numOfAccident": 2,
+    "numOfOwnerChange": 1
+},
+{
+    "carNumber": "22주2222",
+    "owner": "경대승",
+    "model": "maybach",
+    "company": "benz",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "33주2222",
+    "owner": "최충헌",
+    "model": "a8",
+    "company": "audi",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "44주2222",
+    "owner": "이의민",
+    "model": "a4",
+    "company": "audi",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "55주2222",
+    "owner": "사명대사",
+    "model": "idontknow",
+    "company": "bmw",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "66주2222",
+    "owner": "권율",
+    "model": "r8",
+    "company": "audi",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "77주2222",
+    "owner": "이순신",
+    "model": "sm5",
+    "company": "samsung",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "88주2222",
+    "owner": "이병헌",
+    "model": "a5",
+    "company": "audi",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "99주2222",
+    "owner": "임꺽정",
+    "model": "sm7",
+    "company": "samsung",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+},
+{
+    "carNumber": "12주2222",
+    "owner": "김좌진",
+    "model": "a7",
+    "company": "audi",
+    "numOfAccident": 1,
+    "numOfOwnerChange": 3
+}
+]
